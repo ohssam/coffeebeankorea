@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; list-style:none; font-family: 'Noto Sans KR', sans-serif; }
+header { border-bottom: 1px solid #ccc; position: fixed; width: 100%;left: 0; top: 0; z-index: 9999; }
+#header1 { width: 100%; height: 40px; background-color: #eee; }
+#header2 { width: 100%; height: 100px; background-color:#fff;}
+#header1_box { width: 1210px; height: 40px; margin: auto; }
+#header2_box { width: 1210px; height: 100px;  margin: auto; }
+#header1_box ul { float: right; line-height: 40px; }
+#header1_box ul li{ float: left; margin-left: 15px; font-size: 14px;}
+#header1_box ul li:last-child { width: 60px; height: 40px; background: #2f1c11 url(icons/ico_user_info_line.png) center no-repeat ;}
+#header1_box ul li:first-child { border-right: 1px solid #aaa; padding-right: 15px; }
+#header2_box>#logo { width: 100px; height:100px;  float: left; line-height: 100px; }
+#header2_box>#logo>img { vertical-align: middle; margin-top: -8px;}
+#header2_box>#menu { width: 950px; height: 100px;  float: left; margin-left: 50px; text-align: center; }
+#header2_box>#menu>li { display: inline-block; 
+    margin: 0 30px; line-height: 100px; font-size: 14px; font-weight: 600; }
+#header2_box>#menu>li:hover { color: #d4641a;}
+#header2_box>img { width: 30px; height: 30px;  float: right; margin-top: 30px; }
+#main_slide { width: 100%; height: 700px; background:url(images/mainslide_pc.jpg) center no-repeat; margin-top: 140px; }
+#banner { width: 100%; height: 400px; background:url(images/banner.jpg) center no-repeat;  }
+#md_pick { width: 1000px; height: 580px;  margin: auto; }
+#md_pick h2 { width: 1000px; height: 135px;text-align: center; line-height: 135px; }
+#md_pick ul { }
+#md_pick ul li { width: 240px; height: 370px; float: left; margin: 5px; text-align: center;  }
+#md_pick ul li img { width: 100%; }
+#md_pick ul li h3 { font-size: 16px; font-weight: 900; margin-top: 5px;   }
+#md_pick ul li h4 { font-size: 12px; font-weight: 400; margin-top: 5px; }
+#md_pick ul li h5 { font-size: 12px; font-weight: 400; margin-top: 5px; color:  #d4641a; }
+#md_pick_bt { width: 160px; height: 40px;  
+    margin:20px auto; }
+#md_pick_bt li:nth-child(1) { width: 60px; height: 40px;  float: left; border-right: 1px solid #000; box-sizing: border-box; text-align: center; line-height: 40px; }
+#md_pick_bt li:nth-child(2) { width: 100px; height: 40px; float: right; text-align: center; line-height: 40px;  }
+#sns { width: 100%; height: 620px; background-color: #7c51a1; margin-top: 30px; text-align: center;}
+#sns h3 { text-align: center;  color: #fff; line-height: 80px; padding-top:15px; font-size: 24px; font-weight: 400; }
+#sns ul { width: 1200px; height: 400px; margin: auto; }
+#sns ul li { width: 200px; height: 200px; float: left; overflow: hidden; }
+#sns ul li img { width: 100%; transition:transform 0.5s; }
+#sns ul li img:hover { transform: scale(1.2); opacity: 0.7; }
+#sns button { width: 400px; height: 40px; background-color: #f38200; color: #fff; margin-top: 30px; border: none; }
+#btn_top { position: fixed; right: 50px; bottom: 100px; }
+</style>
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <div id="header1_box">
+                <ul>
+                    <li>로그인</li>
+                    <li>매장찾기</li>
+                    <li>채용정보</li>
+                    <li>단체 및 기업구매</li>
+                    <li>고객서비스</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div id="header2">
+            <div id="header2_box">
+                <h1 id="logo"><img src="logo_new.jpg" alt=""></h1> 
+                <ul id="menu">
+                    <li>BUY ONLINE</li>
+                    <li>MEMBER`S CLUB</li>
+                    <li>MENU</li>
+                    <li>STORE & 서비스</li>
+                    <li>THE COFFEE BEAN</li>
+                    <li>CBTL</li>
+                </ul> 
+                <img src="icons/ico_search.png" alt="" id="search">
+            </div>    
+        </div>
+    </header>
+    <!-- main슬라이드 영역 시작 -->
+    <div id="main_slide"></div> 
+    <div id="banner"></div>  
+    <!-- 상품영역 시작 -->
+    <div id="md_pick">
+        <h2>md's pick</h2>
+        <ul>
+            <li>
+                <img src="images/11110041.jpg" alt="">
+                <h3>피크닉 스푼캐니스터(핑크)</h3>
+                <h4>♥봄이 왔 어흥!♥</h4>
+                <h5>6,900원</h5>
+            </li>
+            <li>
+                <img src="images/11110042.jpg" alt="">
+                <h3>커피빈 바닐라 라떼 파우치(10개입)</h3>
+                <h4>♥신제품 출시♥</h4>
+                <h5>15,000원</h5>
+            </li>
+            <li>
+                <img src="images/12600031.jpg" alt="">
+                <h3>아이스박스(크림옐로우) 5.5L</h3>               
+                <h5>25,900원</h5>
+            </li>
+            <li>
+                <img src="images/12600032.jpg" alt="">
+                <h3>아이스박스(소프트퍼플) 5.5L</h3>                
+                <h5>25,900원</h5>
+            </li>
+        </ul>
+    </div> 
+    <!--  -->
+    <ul id="md_pick_bt">
+        <li><img src="icons/btn_pause.png" alt=""></li>
+        <li><img src="icons/paging_on.png" alt=""><img src="icons/paging_on_popup.png" alt=""></li>
+    </ul>
+    <!--  -->
+    <div id="what_new"> <!-- w1236 h780 m:a  -->   
+        h2    <!-- h100 lh100px -->   
+        ul>li <!-- w380 h580 m16 -->
+    </div>
+    <!--  -->
+    <div id="sns">
+        <h3>#커피빈코리아 #커피빈맛있다 #커피빈사랑해</h3>
+        <ul>
+            <li><img src="images/sns1.jpg" alt=""></li>
+            <li><img src="images/sns2.jpg" alt=""></li>
+            <li><img src="images/sns3.jpg" alt=""></li>
+            <li><img src="images/sns4.jpg" alt=""></li>
+            <li><img src="images/sns5.jpg" alt=""></li>
+            <li><img src="images/sns6.jpg" alt=""></li>
+            <li><img src="images/sns7.jpg" alt=""></li>
+            <li><img src="images/sns8.jpg" alt=""></li>
+            <li><img src="images/sns9.jpg" alt=""></li>
+            <li><img src="images/sns10.jpg" alt=""></li>
+            <li><img src="images/sns11.jpg" alt=""></li>
+            <li><img src="images/sns12.jpg" alt=""></li>
+        </ul>
+        <button>OUR INSTAGRAM - @COFFEEBEAN_KR</button>    
+    </div> 
+
+    <!-- / -->
+    <img src="icons/btn_top.png" alt="" id="btn_top"> 
+</body>
+</html>
